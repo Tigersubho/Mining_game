@@ -1,0 +1,27 @@
+{
+  "name": "mining-haven",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:uat": "node tests/uat/run.mjs",
+    "test:all": "vitest run && next build && node tests/uat/run.mjs"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.21.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.43.1",
+    "vitest": "^5.1.0"
+  }
+}
+

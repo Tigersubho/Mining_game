@@ -1,0 +1,10 @@
+[
+ {"name":"dive-base-x","x":-446,"z":88,"yaw":-0.2,"pitch":0.2,"dist":13,"fromY":100,"wait":3500},
+ {"name":"sub-surface","x":-461,"z":148,"yaw":-0.2,"pitch":0.2,"dist":9,"fromY":100,"wait":3500},
+ {"name":"scuba-dive","x":-474,"z":150,"yaw":0.3,"pitch":0.15,"dist":7,"fromY":100,"wait":3500,"setup":"const p=g.player; p.scuba=true; p.char.setScuba(true); p.motor.teleport(-474,-9,150); for(let i=0;i<60;i++) g.simulate(1/60);"},
+ {"name":"in-sub","x":-463.2,"z":156.9,"yaw":-0.2,"pitch":0.15,"dist":13,"fromY":100,"wait":3500,"setup":"const p=g.player; p.toggleVehicle(); p.ballast=0.5; g.input.keyDown('KeyC'); for(let i=0;i<700;i++) g.simulate(1/60); g.input.keyUp('KeyC'); p.vehicle.lights=true; for(let i=0;i<60;i++) g.simulate(1/60);"},
+ {"name":"grotto","x":-395,"z":280,"yaw":1.5708,"pitch":0.1,"dist":6,"fromY":-17,"wait":3500,"setup":"const p=g.player; p.scuba=true; p.char.setScuba(true); for(let i=0;i<90;i++) g.simulate(1/60);"},
+ {"name":"flooded-pit","x":117,"z":-68,"yaw":0.5,"pitch":0.2,"dist":8,"fromY":200,"wait":3500,"setup":"const p=g.player; p.scuba=true; p.char.setScuba(true); for(let i=0;i<90;i++) g.simulate(1/60);"}
+]
+
+
